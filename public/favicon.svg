@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="favGold" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#F5C678" />
+      <stop offset="0.3" stopColor="#E0A02A" />
+      <stop offset="0.7" stopColor="#D78014" />
+      <stop offset="1" stopColor="#945B00" />
+    </linearGradient>
+  </defs>
+  {/* Circular Wax Seal with Beaded Border */}
+  <circle cx="32" cy="32" r="30" fill="#FEFEFB" stroke="url(#favGold)" strokeWidth="3" />
+  <circle cx="32" cy="32" r="26" fill="url(#favGold)" fill-opacity="0.15" stroke="url(#favGold)" stroke-dasharray="2 2" strokeWidth="1" />
+  
+  {/* Intertwined Monogram F & R */}
+  <text x="23" y="38" font-family="'Great Vibes', cursive, serif" font-size="22" font-weight="bold" fill="#D78014" text-anchor="middle">F</text>
+  <text x="32" y="36" font-family="'Cormorant Garamond', Georgia, serif" font-size="12" font-style="italic" fill="#E0A02A" text-anchor="middle">&amp;</text>
+  <text x="41" y="38" font-family="'Great Vibes', cursive, serif" font-size="22" font-weight="bold" fill="#D78014" text-anchor="middle">R</text>
+</svg>

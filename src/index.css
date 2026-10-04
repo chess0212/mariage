@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #D78014;
+    --gold-light: #E0A02A;
+    --gold-dark: #B87300;
+    --gold-shimmer: #FDF3E3;
+    --navy-deep: #112A7A;
+    --navy-soft: #1B358F;
+    --ivory-canvas: #FEFEFB;
+    --ivory-card: #FFFFFF;
+  }
+
+  body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background-color: var(--ivory-canvas);
+    color: var(--navy-deep);
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-script-calligraphy {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  direction: rtl;
+}
+
+/* Luxury Metallic Gold Gradients with #D78014 Palette */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #B87300 0%, #F5C678 30%, #D78014 50%, #FDF3E3 75%, #B87300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #B87300 0%, #E0A02A 35%, #F5C678 50%, #D78014 70%, #945B00 100%);
+}
+
+.gold-card-shadow {
+  box-shadow: 0 10px 40px -10px rgba(215, 128, 20, 0.25), 0 0 20px rgba(224, 160, 42, 0.15);
+}
+
+.gold-seal-shadow {
+  box-shadow: 0 8px 30px rgba(184, 115, 0, 0.45), 0 0 40px rgba(245, 198, 120, 0.35);
+}
+
+.gatefold-container {
+  perspective: 1600px;
+  transform-style: preserve-3d;
+}
+
+/* Shimmer keyframes */
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background-size: 200% auto;
+  animation: goldShimmer 6s linear infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(224, 160, 42, 0.4), 0 0 50px rgba(215, 128, 20, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(224, 160, 42, 0.8), 0 0 80px rgba(215, 128, 20, 0.4);
+    transform: scale(1.03);
+  }
+}
+
+.animate-seal-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes lightSweep {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(250%) skewX(-25deg);
+    opacity: 0;
+  }
+}
+
+.animate-light-sweep {
+  animation: lightSweep 4s ease-in-out infinite;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Fah Adam's & Ramatou — Invitation de Mariage de Luxe",
+  "description": "Site web interactif d'invitation de mariage islamique de luxe pour Fah Adam's et Ramatou avec carte scellée ouvrante, motifs dentelle dorée et programme détaillé.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
